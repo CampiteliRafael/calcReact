@@ -1,0 +1,89 @@
+.botao {
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.botao:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Botões de números */
+.botao-numero {
+  background: #505050;
+  color: #fff;
+}
+
+.botao-numero:hover {
+  background: #606060;
+}
+
+/* Botões de operações */
+.botao-operacao {
+  background: #ff9500;
+  color: #fff;
+}
+
+.botao-operacao:hover {
+  background: #ffad33;
+}
+
+/* Botões de funções */
+.botao-funcao {
+  background: #a6a6a6;
+  color: #000;
+}
+
+.botao-funcao:hover {
+  background: #b8b8b8;
+}
+
+/* Botão zero (mais largo) */
+.botao-zero {
+  border-radius: 35px;
+  width: 152px;
+  justify-content: flex-start;
+  padding-left: 25px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .botao {
+    width: 65px;
+    height: 65px;
+    font-size: 1.3rem;
+  }
+  
+  .botao-zero {
+    width: 142px;
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 320px) {
+  .botao {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+  
+  .botao-zero {
+    width: 132px;
+    padding-left: 20px;
+  }
+}

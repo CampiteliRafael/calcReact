@@ -1,0 +1,37 @@
+.calculadora {
+  background: #1e1e1e;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.linha {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .calculadora {
+    max-width: 320px;
+    padding: 15px;
+  }
+  
+  .botoes {
+    gap: 10px;
+  }
+  
+  .linha {
+    gap: 10px;
+  }
+}
